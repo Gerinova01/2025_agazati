@@ -1,15 +1,18 @@
 /* Alap stílusok */
 body {
     font-family: Arial, sans-serif;
+    background-color: #dfe8f0;
 }
 
 /* Hero szekció */
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('___');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/01_Web_HTML_CSS/images/golden_circle.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 0;
     margin-bottom: 30px;
+    color: #ffffff;
+    text-align: center;
 }
 
 .hero h2 {
@@ -25,12 +28,17 @@ h2 {
     color: #2c3e50;
     margin-bottom: 30px;
     padding-bottom: 10px;
+    border-bottom: 1px solid #3498db;
 }
 
 /* Kártya stílusok */
 .card {
     transition: transform 0.3s;
     margin-bottom: 20px;
+}
+
+.card:hover{
+    width: 110%;
 }
 
 .card-img-top {
@@ -41,10 +49,12 @@ h2 {
 /* Táblázat stílusok */
 .table {
     margin: 20px 0;
+    box-shadow: 5px 5px 5px #cdcdec;
 }
 
 /* Források stílusok */
 #forrasok a {
     color: #776e6e;
     font-style: italic;
+    text-decoration: none;
 }

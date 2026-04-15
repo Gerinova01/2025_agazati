@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<!-- 1.feladat, 2.feladat, 3.feladat -->
+<html lang="hu">
 <head>
-    <title>Iceland</title>
-    <link rel="stylesheet" href="bootstrap">
+    <title>Izland csodái</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="iceland.css">
+    <meta charset="utf-8">
 </head>
 <body>
-    <div>
+    <!-- 4.feladat -->
+    <div class="container">
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -17,6 +21,8 @@
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="#tortenelem">Történelem</a></li>
                         <li class="nav-item"><a class="nav-link" href="#termeszet">Természeti csodák</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#golden">Golden Circle</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#forrasok">Források</a></li>
                     </ul>
                 </div>
             </div>
@@ -25,7 +31,7 @@
         <section id="bevezeto">
             <div class="hero">
                 <div class="container">
-                    <h2>Fedezze fel Izlandot!</h2>
+                    <h1>Izland csodái</h1>
                 </div>
             </div>
         </section>
@@ -34,6 +40,10 @@
 
             <section id="tortenelem">
                 <h2>Izland történelme</h2>
+                <p>Izland történelme a 9. századig nyúlik vissza, amikor norvég vikingek és más skandináv telepesek érkeztek a szigetre.<br>
+930-ban megalapították az Alþinget, a világ egyik legrégebbi parlamentjét.<br> A középkor során Izland norvég, majd dán fennhatóság alá került.<br>
+A 19. és 20. század fordulóján egyre erősödött a függetlenségi mozgalom, amely végül 1944-ben Izland teljes függetlenségéhez vezetett Dániától.
+Az ország azóta is demokratikus berendezkedésű, és gazdaságát főként a halászat, a megújuló energiaforrások és az idegenforgalom határozzák meg.</p>
 
             </section>
 
@@ -41,7 +51,7 @@
                 <h2>Természeti csodák</h2>
                 <div class="row">
 
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="card">
                             <img src="images/northern_lights.jpg" class="card-img-top" alt="Sarki fény">
                             <div class="card-body">
@@ -51,7 +61,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 mb-4">
+                    <div class="col-md-6 mb-6">
                         <div class="card">
                             <img src="images/blue_lagoon.jpg" class="card-img-top" alt="Kék-lagúna">
                             <div class="card-body">
@@ -61,12 +71,42 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="card">
                             <img src="images/vatnajokull.jpg" class="card-img-top" alt="Vatnajökull gleccser">
                             <div class="card-body">
                                 <h5 class="card-title">Vatnajökull gleccser</h5>
                                 <p class="card-text">Európa legnagyobb gleccsere.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="images/gullfoss.jpg" class="card-img-top" alt="Gullfoss vízesés ">
+                            <div class="card-body">
+                                <h5 class="card-title">Gullfoss vízesés</h5>
+                                <p class="card-text"> Izland egyik leglenyűgözőbb vízesése.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="images/thingvellir.jpg" class="card-img-top" alt="Þingvellir Nemzeti Park">
+                            <div class="card-body">
+                                <h5 class="card-title">Þingvellir Nemzeti Park</h5>
+                                <p class="card-text">Történelmi és geológiai jelentőségű UNESCO Világörökségi helyszín.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="images/reynisfjara.jpg" class="card-img-top" alt="Reynisfjara part">
+                            <div class="card-body">
+                                <h5 class="card-title">Reynisfjara part</h5>
+                                <p class="card-text"> Híres fekete homokos part lenyűgöző bazaltoszlopokkal.</p>
                             </div>
                         </div>
                     </div>
@@ -78,16 +118,36 @@
             <section id="golden">
                 <h2>Golden Circle</h2>
                 <table class="table">
+                    <th>
+                        <th>Helyszín</th>
+                        <th>Látogatási idő</th>
+                        <th>Belépő</th>
+                    </th>
                     <tr>
                         <td>Þingvellir</td>
                         <td>2-3 óra</td>
+                        <td> 1000 ISK</td>
+                    </tr>
+                    <tr>
+                        <td>Geysir</td>
+                        <td>1-2 óra</td>
+                        <td>Ingyenes</td>
+                    </tr>
+                    <tr>
+                        <td>Gullfoss</td>
+                        <td> 1 óra</td>
+                        <td>Ingyenes</td>
                     </tr>
                 </table>
             </section>
 
             <section id="forrasok">
                 <h2>Források</h2>
+                <ol>
                     <li><a href="https://www.visiticeland.com/">Visit Iceland</a></li>
+                    <li><a href="https://guidetoiceland.is/">Guide to Iceland</a></li>
+                    <li><a href="https://www.inspiredbyiceland.com/">Inspired by Iceland</a></li>
+                </ol>
             </section>
         </main>
     </div>
